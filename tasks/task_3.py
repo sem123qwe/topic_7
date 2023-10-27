@@ -3,7 +3,9 @@ for num in range(2, 21, 2):
     # if num % 2 == 0:
     print(num)
 
-print("made thought whill")
+# ----------------
+
+print("made thought while:")
 num = 2
 
 while num <= 20:

@@ -1,5 +1,11 @@
-user_input_start = int(input("Введите начало диапазона: "))
-user_input_finish = int(input("Введите конец диапазона: "))
-for num in range(user_input_start, user_input_finish + 1, 2):
+start = int(input("Введите начало диапазона: "))
+finish = int(input("Введите конец диапазона: "))
+
+# 1. Что если начало диапазона больше конца?
+
+
+for num in range(start, finish + 1, 2):
+    # Если начало и конец диапазона равны:
+    # вывести 0 если число нечетное,
+    # само число если оно четное.
     print(num)
-    

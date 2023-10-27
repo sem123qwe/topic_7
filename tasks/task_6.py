@@ -1,4 +1,10 @@
 user_input = abs(int(input("Введите целое число: ")))
-while user_input > 1:
-    n = user_input // 10
-    print(n)
+
+# 1. Не хватает счетчик для подсчета кол-во цифр
+
+while user_input > 1:  # Тут тоже можно улучшить
+    user_input = user_input // 10
+
+print(...)
+
+# TODO: Не забываем про аннотации (для всех задач)
