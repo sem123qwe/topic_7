@@ -1,15 +1,20 @@
-numbers: list = ["105", "42", "98", "120", "84", "80", "110", "119", "130", "99"]
+numbers: list = [
+    "105", "42", "98", "120", "84", "80", "110", "119", "130", "99"
+]
 
-m: int = 0
-forest: list = list()
-
-
-for m in range(len(numbers)):
-    
+print("Числа, кратные 5 или 7 и больше 100:", end=" ")
+for m in range(0, len(numbers)):
     num: int = int(numbers[m])
-    
     if (num % 5 == 0 or num % 7 == 0) and num > 100:
-        forest.append(num)
+        print(num, end=" ")
         m += 1
-    
-print("Числа, кратные 5 или 7 и больше 100: ", forest)
+print()
+
+# ---------------------------
+
+print("Числа, кратные 5 или 7 и больше 100:", end=" ")
+for num in numbers:
+    num: int = int(num)
+    if (num % 5 == 0 or num % 7 == 0) and num > 100:
+        print(num, end=" ")
+print()
