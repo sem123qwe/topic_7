@@ -1,12 +1,10 @@
-user_input = int(input("Введите число:"))
+user_input: int = int(input("Введите число:"))
 
 if user_input < 0:
     print("Факториал определен только для натуральных чисел.")
-elif user_input == 0:  # TODO: Это можно улучшить
-    print("Факториал числа 0 равен 1")
 else:
-    num = 1
-    n = 1
+    num: int = 1
+    n: int = 1
 
     while n <= user_input:
         num *= n

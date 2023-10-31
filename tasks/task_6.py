@@ -1,10 +1,9 @@
-user_input = abs(int(input("Введите целое число: ")))
+user_input: int = abs(int(input("Введите целое число: ")))
 
-# 1. Не хватает счетчик для подсчета кол-во цифр
+counter: int = 0
 
-while user_input > 1:  # Тут тоже можно улучшить
-    user_input = user_input // 10
+while user_input > 1:  
+    user_input //= 10
+    counter += 1
 
-print(...)
-
-# TODO: Не забываем про аннотации (для всех задач)
+print("Количество цифр в числе:", counter)
